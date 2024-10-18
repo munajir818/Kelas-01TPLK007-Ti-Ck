@@ -3,63 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Kelas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website Kelas 01TPLK007 Ti Ck</title>
+    <style>
+        /* Gaya Umum */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007BFF; /* Warna Header */
+            color: white;
+            padding: 7px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%; /* Lebar Kontainer */
+            margin: 20px auto;
+        }
+
+        /* Gaya untuk Kolom Tugas, Profil, Pengumuman */
+        .tasks, .profile, .announcements {
+            background: #fff; /* Warna Latar Konten */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        /* Navigasi */
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            background: #000000; /* Warna Tombol Navigasi */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .nav a:hover {
+            background: #00070f; /* Warna Tombol Saat Hover */
+        }
+
+        /* Gaya untuk Daftar Profil Anggota */
+        .profile-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .profile-item {
+            background: #e9ecef; /* Warna Latar Profil Anggota */
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px; /* Ukuran Tetap untuk Setiap Foto Profil */
+        }
+
+        .profile-item img {
+            border-radius: 50%; /* Membuat Foto Profil Bulat */
+            width: 100px; /* Ukuran Foto Profil */
+            height: 100px; /* Ukuran Foto Profil */
+            object-fit: cover; /* Menjaga Proporsi Gambar */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF; /* Warna Footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Gaya untuk Gambar di Beranda */
+        .home-image {
+            width: 100%; /* Ukuran Maksimum Gambar Beranda */
+            height: auto; /* Tinggi Otomatis untuk Mempertahankan Proporsi */
+            border-radius: 5px; /* Sudut Membulat untuk Gambar */
+            margin-top: 20px; /* Jarak Atas Gambar */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>KELAS 01TPLK007 Ti Ck</h1>
-        <nav>
-            <ul>
-                <li><a href="#jadwal">Jadwal</a></li>
-                <li><a href="#materi">Materi</a></li>
-                <li><a href="#pengumuman">Pengumuman</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="jadwal">
-            <h2>Jadwal Kelas</h2>
-            <table>
-                <tr>
-                    <th>Hari</th>
-                    <th>Jam</th>
-                    <th>Mata Pelajaran</th>
-                </tr>
-                <tr>
-                    <td>Senin</td>
-                    <td>08:00 - 09:30</td>
-                    <td>Matematika</td>
-                </tr>
-                <tr>
-                    <td>Selasa</td>
-                    <td>10:00 - 11:30</td>
-                    <td>Bahasa Indonesia</td>
-                </tr>
-                <!-- Tambahkan lebih banyak jadwal sesuai kebutuhan -->
-            </table>
-        </section>
+<header>
+    <h1>Website Kelas 01TPLK007 Ti Ck</h1>
+</header>
 
-        <section id="materi">
-            <h2>Materi Pelajaran</h2>
-            <ul>
-                <li>Materi Matematika: [Tautan ke materi]</li>
-                <li>Materi Bahasa Indonesia: [Tautan ke materi]</li>
-                <!-- Tambahkan lebih banyak materi sesuai kebutuhan -->
-            </ul>
-        </section>
+<div class="nav">
+    <a href="#" onclick="showPage('home')">Beranda</a>
+    <a href="#" onclick="showPage('profil')">Profil</a>
+    <a href="#" onclick="showPage('tugas')">Tugas</a>
+    <a href="#" onclick="showPage('pengumuman')">Pengumuman</a>
+</div>
 
-        <section id="pengumuman">
-            <h2>Pengumuman</h2>
-            <p>Pengumuman 1: [Isi pengumuman]</p>
-            <p>Pengumuman 2: [Isi pengumuman]</p>
-            <!-- Tambahkan lebih banyak pengumuman sesuai kebutuhan -->
-        </section>
-    </main>
+<div class="container">
+    <div class="content" id="home" style="display: block;">
+        <h2>Selamat datang di website kelas kami!</h2>
+        <p>Ini adalah platform untuk pengumuman, tugas, dan informasi anggota kelas.</p>
+        <text-align: center;>
+        <img src="c:\Users\munaj\OneDrive\Pictures\images.jpg" alt="Gambar Beranda" class="home-image">
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Website Kelas</p>
-    </footer>
+    <div class="content" id="profil" style="display: none;">
+        <h2>Profil Anggota Kelas</h2>
+        <div class="profile-list">
+            <div class="profile-item">
+                <img src="LINK_GAMBAR_PROFIL_1" alt="Foto Profil John Doe">
+                <p>John Doe</p>
+                <p>Ketua Kelas</p>
+            </div>
+            <div class="profile-item">
+                <img src="LINK_GAMBAR_PROFIL_2" alt="Foto Profil Jane Smith">
+                <p>Jane Smith</p>
+                <p>Sekretaris</p>
+            </div>
+            <div class="profile-item">
+                <img src="LINK_GAMBAR_PROFIL_3" alt="Foto Profil Member 3">
+                <p>Member 3</p>
+                <p>Anggota</p>
+            </div>
+            <!-- Tambahkan Anggota Kelas Lainnya -->
+        </div>
+    </div>
+
+    <div class="content" id="tugas" style="display: none;">
+        <h2>Tugas Terbaru</h2>
+        <div>
+            <strong>Tugas 1:</strong> Penelitian - Deadline: 1 November
+        </div>
+        <div>
+            <strong>Tugas 2:</strong> Presentasi - Deadline: 15 November
+        </div>
+        <!-- Tambahkan Tugas Lainnya -->
+    </div>
+
+    <div class="content" id="pengumuman" style="display: none;">
+        <h2>Pengumuman</h2>
+        <p>Pengumuman 1: Rapat kelas pada 20 Oktober.</p>
+        <p>Pengumuman 2: Kegiatan sosial pada 25 Oktober.</p>
+        <!-- Tambahkan Pengumuman Lainnya -->
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Website Kelas 01TPLK007 Ti Ck</p>
+</footer>
+
+<script>
+    // Fungsi untuk Menampilkan Halaman
+    function showPage(page) {
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => {
+            content.style.display = 'none'; // Sembunyikan Semua Konten
+        });
+        document.getElementById(page).style.display = 'block'; // Tampilkan Konten yang Dipilih
+    }
+</script>
+
 </body>
 </html>
